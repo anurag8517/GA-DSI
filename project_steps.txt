@@ -1,0 +1,31 @@
+Project Steps:
+
+1) install correct module versions from requirements.txt
+2) import all necessary libraries
+3) load the feature labels from field_names.txt and store in a list
+4) load the features from the csv file and set the columns and index
+5) store just the labels in the y variable and binarize, M:1, B:0
+6) store just the features in the X variable
+7) write if statement to drop features to only use 2 or 3 once chosen
+8) assess class imbalance by counting instances of M and B
+9) check for null values
+10) separate entire dataframe into M and B
+11) test each feature for both classes to see if it's normal using Shapiro Wilk
+12) calculate and compare smoothness_mean mean and median, compactness_mean mean and median between classes and compare the difference
+13) run t test for all features and compare t stats and p values
+14) run Mann Whitney U test because data is not normally distributed, compare test stats and p values
+15) plot histograms of both classes for all features to visualize difference in distributions
+15) split data into train and test, if bootstrapping split inside bootstrap function
+16) define a bootstrap function to oversample the minority class
+17) scale data
+18) save data for easy loading at testing time
+19) create xgboost feature importance graph function to display and save feature importance graphs
+20) build randomized search for logistic regression
+21) train logistic regression and pickle model
+22) calculate information value for features for logistic regression
+23) build randomized search for xgboost
+24) train xgboost and pickle model
+25) build for loop to evaluate multiple metrics for each model and create and save confusion matrices for each model
+26) save metrics to train and test metrics dataframes
+27) evaluation and discussion
+28) student sample-2.py feedback
